@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Materiales de Construcción</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="contenedor">
+
+        <h1>Gestión de Materiales de Construcción</h1>
+
+        <div class="formulario">
+
+            <h2>Registrar producto</h2>
+
+            <input
+                type="hidden"
+                id="idProducto"
+            >
+
+            <label>Nombre</label>
+            <input
+                type="text"
+                id="nombre"
+                placeholder="Ej: Cemento 50kg"
+            >
+
+            <label>Precio</label>
+            <input
+                type="number"
+                id="precio"
+                step="0.01"
+                placeholder="Ej: 38.90"
+            >
+
+            <label>Cantidad</label>
+            <input
+                type="number"
+                id="cantidad"
+                placeholder="Ej: 40"
+            >
+
+            <label>Categoría</label>
+            <input
+                type="text"
+                id="categoria"
+                placeholder="Ej: Materiales básicos"
+            >
+
+            <button onclick="guardarProducto()">
+                Guardar producto
+            </button>
+
+        </div>
+
+        <h2>Productos registrados</h2>
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Precio</th>
+                    <th>Cantidad</th>
+                    <th>Categoría</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+
+            <tbody id="tablaProductos">
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
